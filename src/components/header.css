@@ -1,0 +1,95 @@
+.header {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1146px;
+    height: 80px;
+    left: 296px;
+    top: 0px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 18px;
+    top: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-icon {
+    width: 26.25px;
+    height: 1.31px;
+    background: #D9D9D9;
+    border: 2px solid #464646;
+}
+
+.dashboard-title {
+    position: absolute;
+    left: 74px;
+    top: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.51);
+}
+
+.search-bar {
+    position: absolute;
+    width: 400px;
+    height: 45px;
+    left: 190px;
+    top: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #7A7E9E;
+}
+
+.user-info {
+    position: absolute;
+    right: 20px;
+    top: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    color: #22285E;
+}
+
+.user-email {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    color: #7A7E9E;
+    margin-top: 4px;
+}
+
+.user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}

@@ -1,0 +1,93 @@
+.sidebar {
+    width: 250px;
+    background-color: #4A4F77;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  overflow-x: hidden;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    width: 0;
+    background: transparent; /* Optional: hide the scrollbar track */
+  }
+
+  .sidebar-logo {
+    padding: 10px;
+    text-align: center;
+ 
+  }
+
+  .sidebar-menu a svg {
+    margin-right: 10px;
+  }
+
+  
+  .sidebar-logo img {
+    max-width: 60%;
+    height: auto;
+     left: -30px;
+  }
+  
+  .sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    background-color: #22285E;
+    margin-left: 30px;
+    margin-top: -10px;
+
+  }
+  
+  .sidebar-menu li {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+  }
+ 
+  .sidebar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    color:inherit;
+    align-items: center;
+    background-color: transparent; 
+    width: 250px;
+  }
+  
+  .sidebar-menu li  a.active {
+    background-color: #4A4F77;
+    height:40px;
+    width: 180px;
+    border-radius: 0px 20px 20px 0px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin-left: -20px;
+    padding-left: 20px;
+  }
+
+
+  .sidebar-menu li a:not(.active):hover {
+    background-color: #22285E;
+  }
+
+  .submenu {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: -18px;
+  }
+  
+  .submenu li a {
+    font-size: 14px;
+  }
+  
+  .submenu li a:hover {
+    background-color: #22285E;
+  }
+  
+  

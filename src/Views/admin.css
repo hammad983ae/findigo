@@ -1,0 +1,221 @@
+/* src/components/Login.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%; 
+}
+
+.login-image {
+  flex: 0.4; 
+  background-image: url('../assets/background.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100%; 
+}
+
+.logo {
+  position: absolute; 
+  top: 5px;
+}
+
+.login-form {
+  flex: 0.6; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #4A4F77; 
+  height: 100%; 
+  position: relative;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 5px; /* Added gap between input boxes */
+  width: 100%;
+  max-width: 350px; /* Ensure the input group is not too wide */
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left; /* Align label text to the left */
+}
+
+.input-group input {
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-align: left; /* Align text within the input box to the left */
+}
+
+.input-group input:focus {
+  border-color: #ff7f50;
+  outline: none;
+}
+
+.email-container,
+.password-container {
+  position: relative;
+}
+
+.tick-icon {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff7f50;
+  cursor: pointer;
+}
+
+input[type="email"]:valid + .tick-icon {
+  display: inline-block;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff7f50; 
+  cursor: pointer;
+}
+
+
+.actions {
+  display: flex;
+  justify-content: space-between; /* Ensures both items are spaced out horizontally */
+  align-items: center; /* Vertically aligns items to the center */
+  width: 100%; /* Ensures the actions container takes up the full width */
+  margin-top: 10px; /* Optional: adds space above the actions */
+}
+
+.actions label {
+  display: flex;
+  align-items: center;
+}
+
+.actions a {
+  color: #ff7f50; /* Example link color */
+  text-decoration: none;
+  margin-left: 20px; /* Adds space between the checkbox and the link */
+  white-space: nowrap; /* Prevents the text from wrapping to the next line */
+}
+
+.actions a:hover {
+  text-decoration: underline;
+}
+
+
+.login-button {
+  width: 350px;
+  max-width: 400px;
+  padding: 10px;
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  pointer-events: auto; 
+}
+
+.login-button:hover,
+.login-button:focus,
+.login-button:active
+ {
+  background-color: #ff6a30; 
+}
+
+
+.account {
+  margin-top: 220px;
+
+}
+
+.login {
+  margin-top: 150px;
+
+}
+
+.signup-link {
+  color: #ff7f50; 
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.signup-link:hover,
+.signup-link:focus,
+.signup-link:active {
+  color: #fd6022; /* Changes color to orange on hover, focus, or click */
+  text-decoration: underline; /* Optional: Adds underline when hovered/clicked */
+}
+
+
+.login-footer {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+  padding: 20px; 
+  position: absolute;
+  bottom: 0;
+}
+
+.login-footer p {
+  margin: 5px 0;
+}
+
+.login-footer a {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+.no-browser-icon::-ms-reveal,
+.no-browser-icon::-ms-clear {
+  display: none;
+}
+
+.no-browser-icon::-webkit-input-decoration,
+.no-browser-icon::-webkit-clear-button,
+.no-browser-icon::-webkit-password-toggle-button {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+

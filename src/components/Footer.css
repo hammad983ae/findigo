@@ -1,0 +1,53 @@
+/* .footer {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1145px;
+    height: 50px;
+    left: 297px;
+    top: 974px;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: #565D6D;
+} */
+
+.footer {
+    box-sizing: border-box;
+    position: fixed; /* Changed from absolute to fixed */
+    width: calc(100% - 250px); /* Full width minus the sidebar width */
+    height: 50px;
+    bottom: 0; /* Position at the bottom of the viewport */
+    border-top: 1px solid #EAEAEA; /* Optional: Border on top for separation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Optional: Background color for footer */
+    z-index: 1000; /* Ensure it appears above other content */
+    left: 250px; /* Start after the sidebar */
+  }
+  
+  .footer p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: #565D6D;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .main-content {
+    padding-bottom: 60px; /* Add padding to the bottom of your main content */
+  }
+  
